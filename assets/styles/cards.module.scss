@@ -1,0 +1,34 @@
+@import "../global.scss";
+
+.cards {
+  width: 90%;
+
+  .card-back {
+    position: relative;
+    z-index: 1;
+    text-align: end;
+    > img {
+      width: 90%;
+    }
+
+    span {
+      position: absolute;
+      top: 40%;
+      right: 12%;
+      color: $white-100;
+    }
+  }
+
+  .card-front {
+    position: relative;
+    z-index: 10;
+
+    > img {
+      width: 90%;
+    }
+
+    > span {
+      color: $white-100;
+    }
+  }
+}
