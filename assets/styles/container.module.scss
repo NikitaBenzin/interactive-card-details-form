@@ -18,3 +18,29 @@
     }
   }
 }
+
+@media (min-width: 398px) {
+  .container {
+    grid-template-rows: 0px 350px auto;
+  }
+}
+
+@media (min-width: 520px) {
+  .container {
+    grid-template-rows: 0px 450px auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: 0px 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    > picture {
+      > img {
+        width: fit-content;
+        height: 100%;
+      }
+    }
+  }
+}

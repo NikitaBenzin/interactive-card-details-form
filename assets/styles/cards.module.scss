@@ -61,3 +61,28 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .cards {
+    width: 90%;
+    position: relative;
+    display: flex;
+    height: 80%;
+    align-items: end;
+    .card-back {
+      width: 100%;
+      > img {
+        width: 80%;
+      }
+    }
+
+    .card-front {
+      top: 0;
+      left: 100px;
+      width: 80%;
+      > img {
+        width: 90%;
+      }
+    }
+  }
+}

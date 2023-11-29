@@ -8,6 +8,7 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: clamp(0.2rem, 4.5vw, 2rem);
+  background-color: hsl(270, 3%, 87%);
   font-weight: 500;
   height: 100vh;
   width: 100%;
@@ -16,7 +17,7 @@ body {
 input,
 button {
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(0.2rem, 4.5vw, 2rem);
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -50,9 +51,14 @@ button {
 }
 
 span {
-  font-size: clamp(0.2rem, 4.5vw, 2rem);
+  font-size: 12px;
 }
 
+@media only screen and (min-width: 290px) {
+  span {
+    font-size: 18px;
+  }
+}
 .cards {
   width: 90%;
   position: relative;
@@ -104,4 +110,28 @@ span {
 }
 .cards .card-front > span {
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 768px) {
+  .cards {
+    width: 90%;
+    position: relative;
+    display: flex;
+    height: 80%;
+    align-items: end;
+  }
+  .cards .card-back {
+    width: 100%;
+  }
+  .cards .card-back > img {
+    width: 80%;
+  }
+  .cards .card-front {
+    top: 0;
+    left: 100px;
+    width: 80%;
+  }
+  .cards .card-front > img {
+    width: 90%;
+  }
 }/*# sourceMappingURL=cards.module.css.map */

@@ -8,6 +8,7 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: clamp(0.2rem, 4.5vw, 2rem);
+  background-color: hsl(270, 3%, 87%);
   font-weight: 500;
   height: 100vh;
   width: 100%;
@@ -16,7 +17,7 @@ body {
 input,
 button {
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(0.2rem, 4.5vw, 2rem);
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -50,9 +51,14 @@ button {
 }
 
 span {
-  font-size: clamp(0.2rem, 4.5vw, 2rem);
+  font-size: 12px;
 }
 
+@media only screen and (min-width: 290px) {
+  span {
+    font-size: 18px;
+  }
+}
 .container {
   background-color: hsl(270, 3%, 87%);
   display: grid;
@@ -67,4 +73,27 @@ span {
   left: 0;
   position: absolute;
   height: auto;
+}
+
+@media (min-width: 398px) {
+  .container {
+    grid-template-rows: 0px 350px auto;
+  }
+}
+@media (min-width: 520px) {
+  .container {
+    grid-template-rows: 0px 450px auto;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: 0px 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+  .container > picture > img {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+  }
 }/*# sourceMappingURL=container.module.css.map */

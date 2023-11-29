@@ -1,12 +1,16 @@
+@import "../global.scss";
+
 .form {
   max-width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 1rem;
 
-  span:not(.error-text) {
-  }
+  background-color: $white-200;
+  border-radius: 0.8rem;
+  z-index: 10;
 
   .card-other {
     display: grid;
@@ -24,5 +28,12 @@
 
   .error-text {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    justify-content: center;
+    width: 80%;
   }
 }
