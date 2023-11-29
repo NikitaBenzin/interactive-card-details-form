@@ -48,6 +48,7 @@ button {
   border-radius: 0.6rem;
   padding: 1rem 0.5rem;
   border: none;
+  cursor: pointer;
 }
 
 span {
@@ -56,9 +57,26 @@ span {
 
 @media only screen and (min-width: 290px) {
   span {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  span {
     font-size: 18px;
   }
 }
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.error-input[type=text] {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+
 .container {
   background-color: hsl(270, 3%, 87%);
   display: grid;

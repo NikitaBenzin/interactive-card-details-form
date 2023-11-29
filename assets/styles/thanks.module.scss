@@ -1,5 +1,10 @@
-.thanks {
+#thanks {
   width: 90%;
   text-align: center;
-  display: none;
+  > h2 {
+    padding: .8rem 0;
+  }
+  > p {
+    padding-bottom: 2rem;
+  }
 }

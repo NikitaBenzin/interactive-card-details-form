@@ -40,17 +40,17 @@
       <section class="cardholder">
         <div>
           <span>Cardholder Name</span>
-          <input type="text" placeholder="e.g. Jane Appleseed">
+          <input id="cardholder" type="text" placeholder="e.g. Jane Appleseed">
         </div>
-        <span class="error-text">Error massage</span>
+        <span class="error-text">Can't be blank</span>
       </section>
 
       <section class="card-number">
         <div>
           <span>Card Number</span>
-          <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+          <input id="number" type="text" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
         </div>
-        <span class="error-text">Error massage</span>
+        <span class="error-text">Wrong format, numbers only</span>
       </section>
 
 
@@ -58,32 +58,34 @@
         <div class="card-date">
           <span>Exp. Date (MM/YY)</span>
           <div>
-            <input type="text" placeholder="MM">
-            <input type="text" placeholder="YY">
+            <input id="date-m" type="text" maxlength="2" placeholder="MM">
+            <input id="date-y" type="text" maxlength="2" placeholder="YY">
           </div>
-          <span class="error-text">Error massage</span>
+          <span class="error-text">Wrong fromat</span>
         </div>
 
         <div class="card-cvc">
           <div>
             <span>CVC</span>
-            <input type="text" placeholder="e.g. 123">
+            <input id="cvc" type="text" maxlength="3" placeholder="e.g. 123">
           </div>
-          <span class="error-text">Error massage</span>
+          <span class="error-text">Wrong format</span>
         </div>
       </section>
 
-      <button>Confirm</button>
+      <button id="confirm">Confirm</button>
 
     </div>
 
-    <div class="thanks">
+    <div id="thanks">
       <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
       <h2>Thank you!</h2>
       <p>We've added your card details</p>
-      <button>Continue</button>
+      <button id="continue">Continue</button>
     </div>
 
   </div>
+
+  <script src="./inedex.js"></script>
 </body>
 </html>

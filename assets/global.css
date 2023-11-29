@@ -48,6 +48,13 @@ button {
   border-radius: 0.6rem;
   padding: 1rem 0.5rem;
   border: none;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+button:hover {
+  opacity: 90%;
 }
 
 span {
@@ -56,6 +63,22 @@ span {
 
 @media only screen and (min-width: 290px) {
   span {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  span {
     font-size: 18px;
   }
+}
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.error-input[type=text] {
+  border: 1px solid hsl(0, 100%, 66%);
 }/*# sourceMappingURL=global.css.map */
