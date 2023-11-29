@@ -2,11 +2,11 @@
 
 .container {
   background-color: $white-200;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
+  display: grid;
+  grid-template-rows: 0px 300px auto;
+  justify-items: center;
+  padding: 1rem 0;
+  height: 100%;
 
   > picture {
     > img {

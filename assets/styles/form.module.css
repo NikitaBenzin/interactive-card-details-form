@@ -1,1 +1,20 @@
-/*# sourceMappingURL=form.module.css.map */
+.form {
+  max-width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form .card-other {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.form .card-other .card-date > div {
+  display: flex;
+  gap: 1rem;
+}
+.form .error-text {
+  width: 100%;
+}/*# sourceMappingURL=form.module.css.map */

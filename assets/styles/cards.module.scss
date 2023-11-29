@@ -2,6 +2,7 @@
 
 .cards {
   width: 90%;
+  position: relative;
 
   .card-back {
     position: relative;
@@ -13,18 +14,46 @@
 
     span {
       position: absolute;
-      top: 40%;
+      top: 41%;
       right: 12%;
       color: $white-100;
     }
   }
 
   .card-front {
-    position: relative;
+    position: absolute;
     z-index: 10;
+    top: 35%;
+    left: 0;
 
     > img {
       width: 90%;
+    }
+
+    > svg {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .number {
+      position: absolute;
+      top: 55%;
+      left: 1rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .owner {
+      position: absolute;
+      top: 75%;
+      left: 1rem;
+      text-transform: uppercase;
+    }
+
+    .date {
+      position: absolute;
+      top: 75%;
+      right: 20%;
     }
 
     > span {

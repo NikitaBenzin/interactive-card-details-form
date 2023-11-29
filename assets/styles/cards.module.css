@@ -7,7 +7,7 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
+  font-size: clamp(0.2rem, 4.5vw, 2rem);
   font-weight: 500;
   height: 100vh;
   width: 100%;
@@ -16,7 +16,7 @@ body {
 input,
 button {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
+  font-size: clamp(0.2rem, 4.5vw, 2rem);
   font-weight: 500;
 }
 
@@ -33,9 +33,11 @@ input[type=text]:focus {
 
 input[type=text] {
   border-radius: 0.6rem;
-  padding: 0.8rem 0.5rem;
+  padding: 0.5rem;
   width: 100%;
   border: 1px solid hsl(279, 6%, 55%);
+  background-color: hsl(270, 3%, 87%);
+  margin-top: 0.2rem;
 }
 
 button {
@@ -47,8 +49,13 @@ button {
   border: none;
 }
 
+span {
+  font-size: clamp(0.2rem, 4.5vw, 2rem);
+}
+
 .cards {
   width: 90%;
+  position: relative;
 }
 .cards .card-back {
   position: relative;
@@ -60,16 +67,40 @@ button {
 }
 .cards .card-back span {
   position: absolute;
-  top: 40%;
+  top: 41%;
   right: 12%;
   color: hsl(0, 0%, 100%);
 }
 .cards .card-front {
-  position: relative;
+  position: absolute;
   z-index: 10;
+  top: 35%;
+  left: 0;
 }
 .cards .card-front > img {
   width: 90%;
+}
+.cards .card-front > svg {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.cards .card-front .number {
+  position: absolute;
+  top: 55%;
+  left: 1rem;
+  letter-spacing: 0.2rem;
+}
+.cards .card-front .owner {
+  position: absolute;
+  top: 75%;
+  left: 1rem;
+  text-transform: uppercase;
+}
+.cards .card-front .date {
+  position: absolute;
+  top: 75%;
+  right: 20%;
 }
 .cards .card-front > span {
   color: hsl(0, 0%, 100%);
